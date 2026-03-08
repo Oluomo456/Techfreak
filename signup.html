@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DiegoTech World: Login</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="title" content="DiegoTech World">
+        <meta name="description" content="DiegoTech is one of the best tech selling companies, we look forward to being of any assistance we can be to you">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                background: linear-gradient(to right, red, yellow);
+                min-height: 100vh;
+                background-repeat: repeat;
+                margin: 0;
+                align-items: center;
+            }
+            .card {
+                max-width: 1000px;
+                margin: 10px;
+                padding: 5px;
+                overflow-y: auto;
+                position: relative;
+                float: left;
+                z-index: 1;
+                overflow-x: hidden;
+                background-color: white;
+                display: flex;
+                transition: 0.3s;
+                flex-direction: column;
+                border-radius: 10px;
+                box-shadow: 0 0 0 8px rgba(225, 225, 255, 0.2);
+            }
+            a:hover {
+                opacity: 0.7;
+            }
+            input {
+                width: 400px;
+            }
+        </style>
+        <div class="card">
+            <h1 style="text-align: center; color: green; outline: auto;">DIEGOTECH WORLD</h1>
+            <p>Please fill in the following with the appropriate details:-</p>
+            <p><b>First Name:</b></p>
+            <input type="text" name="Firstname" class="firstname" placeholder="Firstname" style="padding: 5px;">
+            <p><b>Last Name:</b></p>
+            <input type="text" name="Lastname" class="lastname" placeholder="Lastname" style="padding: 5px;">
+            <p><b>Username:</b></p>
+            <input type="text" name="Username" class="username" placeholder="Username" style="padding: 5px;">
+            <p><b>Password:</b></p>
+            <input type="text" name="password" class="password" placeholder="password" style="padding: 5px;">
+            <p><b>Email:</b></p>
+            <input type="text" name="email" class="email" placeholder="Email" style="padding: 5px;">            
+            <a href="welcome.html"><button style="margin-top: 3px; width: 100%; padding: 5px; background-color: green; color: white;"><b>Sign up</b></button></a>
+            <p style="text-align: center;"><a href="login.html">Sign in</a> if you already have an account.</p>
+        </div>
+    </body>
+</html>

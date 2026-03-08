@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-gb" class="core-ux" data-app="feedpager" data-env="prod">
+<head>
+    <title>DiegoTech World: Dashboard </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="title" content="DiegoTech World">
+    <meta name="description" content="DiegoTech is one of the best tech selling companies, we look forward to being of any assistance we can be to you">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+                            body {
+    background: linear-gradient(to right, red, yellow);
+    min-height: 100vh;
+    background-repeat: repeat;
+    margin: 0;
+}
+                    .topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+    background-color: antiquewhite;
+    color: darkblue;
+}
+.logo {
+    height: 48px;
+    width: 48px;
+    float: right;
+}
+img {
+    width: 100%;
+}
+.search {
+    padding: 14px 16px;
+    width: 300px;
+}
+.searc {
+    padding: 14px 16px;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+    background: #333;
+}
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #333;
+    padding: 14px 16px;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown:hover .dropbtn {
+    background: #333;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: white;
+    background: #111111;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a:hover {
+    background: #111111;
+    color: red;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.avatar {
+    vertical-align: middle;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    float: right;
+}
+.header {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #46a049;
+    color: aliceblue;
+    text-align: center;
+}
+footer {
+    background-color: #111;
+    margin-top: 10px;
+}
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: antiquewhite;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i {
+    font-size: 2em;
+    color: #000;
+    opacity: 0.9;
+}
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5ms;
+}
+.socialIcons a:hover i {
+    color: white;
+    transition: o.5s;
+}
+.footerNav {
+    margin: 30px 0;
+}
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p {
+    color: white;
+}
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: opx 5px;
+}
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+.goods {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 220px;
+    max-height: 400px;
+    margin: 16px;
+    float: left;
+    font-family: Arial;
+}
+.below {
+    color: grey;
+    font-size: 20px;
+    text-align: center;
+}
+.goods button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background: #000;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+.goods button:hover {
+    opacity: 0.7;
+}
+img {
+    width: 100%;
+    height: 250px;
+}
+h4 {
+    text-align: center;
+}
+.start:hover {
+    opacity: 0.7;
+}
+    </style>
+    <div class="topnav">
+        <img src="d.png" alt="logo" class="logo">
+        <img src="avatar.png" alt="Avatar" class="avatar">
+        <a href="index.html">Home</a>
+        <a href="vision.html">Our Visions</a>
+        <a href="service.html">Our Services</a>
+        <a href="contacts.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <div class="dropdown">
+            <button class="dropbtn">Our Product
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="laptop.html">Laptops</a><br>
+                <a href="phones.html">Phones</a><br>
+                <a href="harddrives.html">Hard drives</a><br>
+                <a href="pcaccessories.html">PC Accessories</a><br>
+            </div>
+        </div>
+        <input type="text" name="search" class="search" placeholder="Search......">
+        <button class="searc" type="submit">search</button>
+    </div>
+    <header class="header">Call to Order: 09042212379 OR Whatsapp: 09042212379</header>
+    <img src="logo2.png" alt="my banner" style="font-weight: 100%; height: 100%;">
+    <a href="index.html" class="start"><button style="align-items: center; text-align: center; padding: 10px; background-color: green; margin: 43%; cursor: pointer; margin-top: 0; margin-bottom: 0; font-size: 20px;">GET STARTED</button></a>
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="signup.html">Sign-Up</a></li>
+                    <li><a href="login.html">Sign-In</a></li>
+                    <li><a href="contacts.html">Contact us</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+        </footer>
+        <div class="footerBottom">
+            <p>Copyright: &copy;2024, Design by <span class="designer">D.Money</span></p>
+        </div>
+    
+</body>
+</html>
